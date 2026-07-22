@@ -311,3 +311,50 @@ grid-template-columns:1fr;
 }
 
 }
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.gallery-item{
+
+    aspect-ratio:1;
+
+    background:#1d1d28;
+
+    border:2px dashed rgba(180,0,255,.4);
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#b8b8b8;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#b400ff;
+
+    box-shadow:0 0 25px rgba(180,0,255,.35);
+
+}
