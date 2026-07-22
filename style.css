@@ -193,3 +193,13 @@ transform:translateY(-5px) scale(1.05);
 box-shadow:0 0 30px #9c4dff;
 
 }
+section{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
