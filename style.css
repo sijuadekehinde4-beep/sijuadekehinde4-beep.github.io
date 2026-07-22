@@ -16,23 +16,39 @@ body{
 }
 
 nav{
-    position:sticky;
-    top:0;
-    background:#181820;
+    position:fixed;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    max-width:1200px;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
+
+    padding:15px 30px;
+
+    background:rgba(20,20,30,.55);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(180,0,255,.25);
+
+    border-radius:18px;
+
     z-index:1000;
-    box-shadow:0 5px 20px rgba(0,0,0,.35);
+
+    transition:.4s;
 }
 
 .logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#bb66ff;
+    display:flex;
+    align-items:center;
 }
 
+.logo img{
+    height:55px;
+}
 nav ul{
     display:flex;
     list-style:none;
