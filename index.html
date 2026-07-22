@@ -1,94 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Me.Arts Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me.Arts | Digital Illustrator</title>
 
-<style>
-body{
-    margin:0;
-    background:#111;
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
-}
-
-header{
-    padding:80px 20px;
-    background:#1b1b1b;
-}
-
-h1{
-    font-size:48px;
-    margin:0;
-}
-
-p{
-    color:#ccc;
-}
-
-.button{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
-    background:#ff5fa2;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:40px;
-}
-
-.art{
-    background:#222;
-    padding:80px 20px;
-    border-radius:15px;
-}
-
-footer{
-    padding:30px;
-    color:#888;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>Me.Arts</h1>
+<nav>
+    <div class="logo">Me.Arts</div>
 
-<p>Character Artist • Comics and Manga • Fantasy • Furry Art</p>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<a class="button" href="#">View Gallery</a>
-</header>
+<section id="home" class="hero">
 
-<section class="gallery">
+    <img src="images/logo.png" alt="Me.Arts Logo" class="hero-logo">
 
-<div class="art">
-Artwork 1
-</div>
+    <h1>Bringing Your Ideas to Life</h1>
 
-<div class="art">
-Artwork 2
-</div>
+    <p>
+        Character Design • Comics • Manga • Fantasy • Furry Art
+    </p>
 
-<div class="art">
-Artwork 3
-</div>
+    <div class="buttons">
+        <a href="#gallery" class="btn">View Gallery</a>
+        <a href="#contact" class="btn secondary">Commission Me</a>
+    </div>
 
 </section>
 
-<footer>
+<section id="about">
+    <h2>About Me</h2>
 
-© 2026 Me.Arts
+    <p>
+        Hi! I'm Me.Arts, a freelance digital illustrator specializing in
+        character design, comics, manga, fantasy artwork, furry art,
+        and game illustrations.
+    </p>
+</section>
 
-</footer>
+<section id="services">
+    <h2>Services</h2>
+
+    <div class="cards">
+
+        <div class="card">🎨 Character Illustration</div>
+
+        <div class="card">📖 Comics & Manga</div>
+
+        <div class="card">🐺 Furry Art</div>
+
+        <div class="card">🐉 Fantasy Art</div>
+
+        <div class="card">🎮 Game Illustration</div>
+
+        <div class="card">📚 Book Covers</div>
+
+    </div>
+
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <p>
+        Your artwork will appear here soon...
+    </p>
+</section>
+
+<section id="contact">
+
+    <h2>Commission Status</h2>
+
+    <h3>🟢 OPEN</h3>
+
+    <p>
+        Contact me through Discord, Telegram or Email.
+    </p>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
