@@ -52,12 +52,16 @@ nav a:hover{
 .hero{
     min-height:100vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:40px;
-    background:radial-gradient(circle,#8f3dff22,#0f0f13);
+    overflow:hidden;
+    position:relative;
+
+    background:
+    radial-gradient(circle at top,#8d3cff55,transparent 45%),
+    radial-gradient(circle at bottom,#5318ff44,transparent 35%),
+    #0f0f13;
 }
 
 .hero-logo{
