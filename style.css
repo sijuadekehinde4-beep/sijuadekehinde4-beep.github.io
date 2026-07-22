@@ -55,13 +55,9 @@ nav a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    overflow:hidden;
     position:relative;
-
-    background:
-    radial-gradient(circle at top,#8d3cff55,transparent 45%),
-    radial-gradient(circle at bottom,#5318ff44,transparent 35%),
-    #0f0f13;
+    overflow:hidden;
+    background:#0f0f13;
 }
 
 .hero-logo{
@@ -202,4 +198,37 @@ section{
 section.show{
     opacity:1;
     transform:translateY(0);
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,
+        rgba(157,78,221,.35),
+        transparent 70%);
+    border-radius:50%;
+    animation:glowMove 12s ease-in-out infinite;
+    filter:blur(25px);
+}
+
+@keyframes glowMove{
+
+0%{
+transform:translate(-80px,-40px) scale(1);
+}
+
+50%{
+transform:translate(80px,40px) scale(1.15);
+}
+
+100%{
+transform:translate(-80px,-40px) scale(1);
+}
+
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
 }
